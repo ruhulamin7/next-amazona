@@ -5,8 +5,6 @@ import {
   Grid,
   List,
   ListItem,
-  ListItemButton,
-  ListItemText,
   Typography,
 } from '@mui/material';
 import Image from 'next/image';
@@ -16,7 +14,7 @@ import Layout from '../../components/Layout';
 import data from '../../utils/data';
 import useStyles from '../../utils/styles';
 
-const productDetail = () => {
+const ProductDetail = () => {
   const classes = useStyles();
   const router = useRouter();
   const { slug } = router.query;
@@ -102,4 +100,4 @@ const productDetail = () => {
   );
 };
 
-export default productDetail;
+export default ProductDetail;
