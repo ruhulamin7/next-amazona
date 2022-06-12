@@ -4,21 +4,19 @@ import {
   createTheme,
   CssBaseline,
   FormControlLabel,
-  FormGroup,
-  Stack,
+  styled,
   Switch,
   ThemeProvider,
   Toolbar,
   Typography,
-  styled,
 } from '@mui/material';
+import Cookies from 'js-cookie';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useContext } from 'react';
 import { Store } from '../utils/Store';
 import useStyles from '../utils/styles';
 import './Layout';
-import Cookies from 'js-cookie';
 
 const Layout = ({ title, description, children }) => {
   const { state, dispatch } = useContext(Store);
