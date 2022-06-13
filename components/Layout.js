@@ -21,6 +21,7 @@ import './Layout';
 const Layout = ({ title, description, children }) => {
   const { state, dispatch } = useContext(Store);
   const { darkMode } = state;
+
   const theme = createTheme({
     typography: {
       h1: {
